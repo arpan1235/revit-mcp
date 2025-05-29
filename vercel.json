@@ -1,10 +1,13 @@
 {
   "version": 2,
   "builds": [
-    { "src": "api/**/*.js", "use": "@vercel/node" }
+    { "src": "api/**/*.{js,ts}", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/api/sse", "dest": "/api/sse.js" },
-    { "src": "/api/mcp", "dest": "/api/mcp.js" }
+    {
+      "src": "/api/mcp",
+      "methods": ["GET","POST","DELETE"],
+      "dest": "api/mcp/route.ts"
+    }
   ]
 } 
