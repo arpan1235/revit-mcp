@@ -31,7 +31,4 @@ export default async function handler(req, res) {
     res.setHeader("Allow", "GET,POST");
     res.statusCode = 405; res.end();
   }
-}
-
-// Ensure Node.js runtime for streaming
-export const config = { runtime: 'nodejs' }; 
+} 
