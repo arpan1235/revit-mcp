@@ -1,5 +1,5 @@
 import { createMcpHandler } from '@vercel/mcp-adapter';
-import { registerTools } from '../../build/tools/register.js';
+import { registerTools } from '../build/tools/register.js';
 
 // Create an MCP server handler using the adapter
 const handler = createMcpHandler(async (server) => {

@@ -7,7 +7,7 @@
     {
       "src": "/api/mcp",
       "methods": ["GET","POST","DELETE"],
-      "dest": "api/mcp/route.ts"
+      "dest": "api/mcp.js"
     }
   ]
 } 
